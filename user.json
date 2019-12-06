@@ -1,0 +1,18 @@
+[
+  {
+  "name": "Name",
+  "surname": "Surname",
+  "age": 21,
+  "picturePath": "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+  },
+
+  {
+    "name": "Name2",
+    "surname": "Surname2",
+    "age": 22,
+    "picturePath": "https://www.thirdrockventures.com/uploads/team/Apr-23/IvanHyep_main_1000x1000.jpg"
+  }
+]
+
+
+
