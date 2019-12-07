@@ -11,15 +11,21 @@ function createUserItem(user) {
     userItemContainer.classList.add('userItem');
     const userImageContainer = document.createElement("div");
     userImageContainer.classList.add("imageContainer");
+
+    const pElem = document.createElement("p");
+    pElem.innerText = `${user.name.split("")[0]}${user.surname.split("")[0]}`;
+    userImageContainer.appendChild(pElem);
+
+
     const userImage = document.createElement("img");
 
     userImage.setAttribute("src", `${user.picturePath}`);
-    userImage.onerror = () => {
-
+    userImage.onload = () => {
+        userImageContainer.appendChild(userImage);
     };
 
-    userImage.setAttribute("alt", "user picture");
-    userImageContainer.appendChild(userImage);
+    userImageContainer.style.backgroundColor = stringToColor(`${user.name} ${user.surname}`);
+
 
     userItemContainer.appendChild(userImageContainer);
 
